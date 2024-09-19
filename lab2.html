@@ -7,66 +7,134 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
     <title>My Educational Background</title>
 </head>
-<body>
+<body style="background-color: antiquewhite;">
 
-    <header class="text-bg-info text-white py-3 mb-4">
-        <div class="container">
-            <h1 class="text-center">My Educational Background</h1>
+    <nav class="navbar" style="background-color:antiquewhite; ;">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Jade Colmenar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Education</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Projects</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+        <div class="mb-3" class="container-fluid" style="background-color: antiquewhite;">
+            <h1 class="text-center" >My Educational Background</h1>
         </div>
     </header>
-
-    <main class="container">
-        <section class="mb-">
-            <h2 class="mb-3 text-secondary">Education</h2>
+    <!--Main Class-->
+    <main class="container-sm">
+        <section class="mb-5">
+            <h2 class="mb-3">Education</h2>
             <ul class="list-group list-group-flush">
                 <li class="list-group-item">
                     <strong>Toronto Metropolitan University (Formerly Ryerson)</strong>, Toronto, ON<br>
                     Bachelor of Commerce - Business Technology Management<br>
-                    <em>Expected Graduation:</em> May 2026
+                    <i>Expected Graduation:</i> May 2026
                 </li>
                 <li class="list-group-item">
                     <strong>St. Pope John Paul II</strong>, Scarborough, ON<br>
                     High School Diploma<br>
-                    <em>2018 - 2022</em>
+                    <i>2018 - 2022</i>
                 </li>
             </ul>
         </section>
 
         <section class="mb-5">
-            <h2 class="mb-3 text-secondary">Program & Courses</h2>
+            <h2 class="mb-3">Program & Courses</h2>
             <p>My program consists of a variety of courses that cover both technical and business subjects such as:</p>
-            <ul class="list-group">
-                
-                <li class="list-group-item" >Python Programming</li>
-                <li class="list-group-item">Microsoft SQL Server</li>
-                <li class="list-group-item">UML Diagrams</li>
-                <li class="list-group-item">Business Management Principles</li>
+           
+            <ul class="list-group list-group-flush">
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                          Python
+                        </button>
+                      </h2>
+                      <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            This course covered the fundamental principles of object-oriented, event-driven program design and implementation in a business environment. Including logic development, program design, modularity, structured programming standards, maintainability, testing and debugging. Specifically the course included some programming features like memory variables; object methods and properties; the logic constructs - sequence, branch, case and loops; simple arrays; basic file structures; validation and error handling. 
+                            GUI programming language was used to reinforce the theoretical concepts taught in this class.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                          Microsoft SQL
+                        </button>
+                      </h2>
+                      <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          It is centered around conceptual data modeling techniques, converting the conceptual data models into relational data models and verifying its structural characteristics with normalization techniques. The course covered basic database administration tasks and key concepts of data quality and data security. Building on the transactional database understanding, providing a introduction to data and information management technologie capabilities under the broad business intelligence umbrella.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                          UML Diagrams
+                        </button>
+                      </h2>
+                      <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            The course covered these key concepts, techniques, and methodologies relevant to the process of developing information systems (IS). The course focuses on the development of requirements, analysis, and design models of the system to be. 
+                            The specifications of these models are done using the Unified Modeling Language (UML). 
+                            In addition, the course provides a contextual coverage of the system development life cycle and select concepts of IS construction, deployment and project management respectively.                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            Marketing
+                          </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                            The course introduced the fundamental building blocks of marketing: the theories, principles and concepts of market behaviour; marketing metrics and financial marketing; and the skills to leverage this knowledge with IT tools to execute marketing strategies. Including the financial marketing, the marketing mix, environmental scanning, segmenting, targeting and positioning. . 
+                            Deveopling these quantitative and qualitative skills and made effective and ethical decisions in both the consumer and business markets.                          </div>
+                        </div>
+                      </div>
+                  </div>
+                </ul>
+
+            <h3 class="mt-4">Most Useful Courses</h3>
+            <ul>
+            <li><strong>Python:</strong> is a commonly used language that can be applied to various fields, from data analysis to web development. Its flexibility allows me to use it across different projects. Enhancing my problem-solving and coding skills.</li>
+            <li><strong>SQL:</strong> is a great backend database, because of the course I am able to populate my own database. THis course has allowed me to be more orgainzed with my information. SQL is great for storing data from surveys, forms, and websites. </li>    
             </ul>
-
-            <h3 class="mt-4">Most Useful Course</h3>
-            <p>The most useful course for me so far has been <strong>Python Programming</strong>. Python is an incredibly versatile language that can be applied in numerous fields, from data analysis to web development. Its flexibility allows me to utilize it across different projects, enhancing my problem-solving and coding skills.</p>
         </section>
 
         <section class="mb-5">
-            <h2 class="mb-3 text-secondary">Educational Awards</h2>
-            <p>Currently, I have no formal educational awards, but I am actively working towards achieving academic excellence.</p>
-        </section>
-
-        <section class="mb-5">
-            <h2 class="mb-3 text-secondary">Extracurricular Activities</h2>
+            <h2 class="mb-3">Extracurricular Activities</h2>
             <ol class="list-group list-group-numbered">
                 <li class="list-group-item">Volunteered for the TMSU tax clinic, assisting fellow students in filing their taxes and gaining hands-on experience in real-world scenarios.</li>
+                <li class="list-group-item">Assisted in student events, helping disability students to where they need to go.</li>
+
             </ol>
         </section>
 
     </main>
-
+</div>
 
     <footer class="bg-light py-3">
         <div class="container text-center">
             <p>&copy; 2024 Jade Colmenar. All Rights Reserved.</p>
             <p>For more information about my program and courses, you can visit the <a href="https://www.torontomu.ca/programs/undergraduate/business-technology-management/" target="_blank" class="link-primary">Business Technology Management Program page</a> at Toronto Metropolitan University.</p>
-        </div>
     </footer>
 
 
